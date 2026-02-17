@@ -1,4 +1,5 @@
 ```mermaid
+
 classDiagram
     class CLI_EntryPoint {
         <<Main Script>>
