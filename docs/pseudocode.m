@@ -17,15 +17,19 @@
         complement(arr_A)
           return not A for A, U
 
+        # A ∪ B - Union
         union(arr_A, arr_B)
           return A or B for A, B
 
+        # A ∩ B - Intersection
         intersection(arr_A, arr_B)
           return A and B for A, B
 
+        # A - B - Difference, A AND NOT B
         difference(arr_A, arr_B)
           return A and not B for A, B
 
+        # A ⊕ B - Symmetric Difference, XOR
         symmetric_difference(arr_A, arr_B)
           return A != B for A, B
 
@@ -35,14 +39,32 @@
     }
 
     class Part2_Multisets {
+    
         Counter bag_A
         Counter bag_B
         list items
+        
         generate_random_bag(items)
+            force two random items into bag with multiplicity > 2
+            fill the rest of bag with random items up to total count
+            return bag
+
+        # Adds the counts together    
         additive_union(bag_A, bag_B)
+            return bag_a + bag_b
+
+        # Takes the max count for each element
         standard_union(bag_A, bag_B)
+            return bag_a | bag_b
+
+        # Takes the min count for each element    
         intersection(bag_A, bag_B)
+            return bag_a & bag_b
+
+        # Subtracts counts of B from A, can't be negative
         difference(bag_A, bag_B)
+            return bag_a - bag_b
+            
         display_results(label, counter_obj)
     }
 
