@@ -1,4 +1,11 @@
 ```mermaid
+classDiagram
+    class CLI_EntryPoint {
+        <<Main Script>>
+        string mode --part1|--part2
+        main()
+    }
+
     class Part1_OrdinarySets {
         list universal_set
         list bit_array_A
