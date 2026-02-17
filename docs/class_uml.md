@@ -11,7 +11,7 @@ classDiagram
         list universal_set
         list bit_array_A
         list bit_array_B
-        generate_sets()
+        generate_random_sets()
         complement(bit_array)
         union(arr_A, arr_B)
         intersection(arr_A, arr_B)
@@ -24,7 +24,7 @@ classDiagram
         Counter bag_A
         Counter bag_B
         list items
-        generate_bag(items)
+        generate_random_bag(items)
         additive_union(bag_A, bag_B)
         standard_union(bag_A, bag_B)
         intersection(bag_A, bag_B)
