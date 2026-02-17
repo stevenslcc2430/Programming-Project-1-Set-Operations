@@ -13,23 +13,29 @@
 
         generate_random_subset()
           return list bit_array length of universal_set
-
+        
+        # Flips True to False and vice versa
+        # NOT(A) - Complement
         complement(arr_A)
           return not A for A, U
 
         # A ∪ B - Union
+        # True if in either A or B
         union(arr_A, arr_B)
           return A or B for A, B
 
         # A ∩ B - Intersection
+        # True only if in both A and B
         intersection(arr_A, arr_B)
           return A and B for A, B
 
-        # A - B - Difference, A AND NOT B
+        # A - B - Difference
+        # A and not B
         difference(arr_A, arr_B)
           return A and not B for A, B
 
-        # A ⊕ B - Symmetric Difference, XOR
+        # A ⊕ B - Symmetric Difference
+        # XOR, in exactly one of the sets, A != B
         symmetric_difference(arr_A, arr_B)
           return A != B for A, B
 
