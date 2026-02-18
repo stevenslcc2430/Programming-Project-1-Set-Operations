@@ -8,11 +8,11 @@
     class Part1_OrdinarySets {
 
         list universal_set
-        list bit_array_A
-        list bit_array_B
+        list bool_array_A
+        list bool_array_B
 
         generate_random_subset()
-          return list bit_array length of universal_set
+          return list bool_arr length of universal_set
         
         # Flips True to False and vice versa
         # NOT(A) - Complement
