@@ -9,10 +9,10 @@ classDiagram
 
     class Part1_OrdinarySets {
         list universal_set
-        list bit_array_A
-        list bit_array_B
+        list bool_array_A
+        list bool_array_B
         generate_random_subset(uni_set)
-        complement(bit_array)
+        complement(bool_array)
         union(arr_A, arr_B)
         intersection(arr_A, arr_B)
         difference(arr_A, arr_B)
