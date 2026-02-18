@@ -1,11 +1,11 @@
 ```python
 
-    class CLI_EntryPoint {
+    class CLI_EntryPoint:
         string mode --part1|--part2
         main()
-    }
+    
 
-    class Part1_OrdinarySets {
+    class Part1_OrdinarySets:
 
         list universal_set
         list bool_array_A
@@ -42,9 +42,8 @@
         display_results(label, result_bits)
           display labeled operation and universal set name-at-index list
     
-    }
 
-    class Part2_Multisets {
+    class Part2_Multisets:
     
         Counter bag_A
         Counter bag_B
@@ -72,6 +71,5 @@
             return bag_a - bag_b
             
         display_results(label, counter_obj)
-    }
 
 ```
