@@ -11,6 +11,8 @@
         list bool_array_A
         list bool_array_B
 
+        get_set_from_boolean(bool_list)
+
         generate_random_subset()
           return list bool_arr length of universal_set
         
@@ -39,7 +41,7 @@
         symmetric_difference(arr_A, arr_B)
           return A != B for A, B
 
-        display_results(label, result_bits)
+        display_results()
           display labeled operation and universal set name-at-index list
     
 
