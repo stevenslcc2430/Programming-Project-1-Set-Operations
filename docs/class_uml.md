@@ -11,13 +11,14 @@ classDiagram
         list universal_set
         list bool_array_A
         list bool_array_B
+        get_set_from_boolean(bool_set)
         generate_random_subset(uni_set)
-        complement(bool_array)
+        complement(bool_list)
         union(arr_A, arr_B)
         intersection(arr_A, arr_B)
         difference(arr_A, arr_B)
         symmetric_difference(arr_A, arr_B)
-        display_results(label, result_bits)
+        display_sets()
     }
 
     class Part2_Multisets {
