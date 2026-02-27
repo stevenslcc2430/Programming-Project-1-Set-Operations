@@ -1,13 +1,14 @@
 import unittest
 
 from Part1_Set_Operations import Part1_OrdinarySets
-from Part1_Set_Operations import empty_test
+
 class MyTestCase(unittest.TestCase):
     def setUp(self):
             self.test1 = Part1_OrdinarySets()
             self.test2 = Part1_OrdinarySets()
             self.test3 = Part1_OrdinarySets()
-            self.empty = empty_test()
+            self.empty_test = Part1_OrdinarySets()
+
     def test_complement(self):
             #expected values
             self.complement1 = self.test1.complement_a
@@ -79,23 +80,24 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.symmetric_difference2, self.symmetric2)
             self.assertEqual(self.symmetric_difference3, self.symmetric3)
     def test_edge_cases(self):
+            #self.empty_test = Part1_OrdinarySets()
             #complement
-            self.complement = self.empty.complement_a
-            self.complement_empty = [not value for value in self.empty.empty1]
-            self.assertEqual(self.complement, self.complement)
+            self.complement = self.empty_test.complement_aEmpty
+            self.complement_empty = [not value for value in self.empty_test.empty_testA]
+            self.assertEqual(self.complement, self.complement_empty)
             # union test
-            self.union_results = self.empty.union
-            self.union = [self.empty.empty1[i] or self.empty.empty2[i] for i in range(self.empty.n)]
+            self.union_results = self.empty_test.unionEmpty
+            self.union = [self.empty_test.empty_testB[i] or self.empty_test.empty_testA[i] for i in range(self.empty_test.n)]
             self.assertEqual(self.union, self.union_results)
             # intersection
-            self.results = self.empty.intersection
-            self.intersection = [self.empty.empty1[i] and self.empty.empty2[i] for i in range(self.empty.n)]
+            self.results = self.empty_test.intersectionEmpty
+            self.intersection = [self.empty_test.empty_testA[i] and self.empty_test.empty_testB[i] for i in range(self.empty_test.n)]
             self.assertEqual(self.intersection, self.results)
             # difference
-            self.difference = self.empty.difference_a_minus_b
-            self.difference_a_minus_b = [self.empty.empty1[i] and not self.empty.empty2[i] for i in range(self.empty.n)]
+            self.difference = self.empty_test.difference_a_minus_bEmpty
+            self.difference_a_minus_b = [self.empty_test.empty_testA[i] and not self.empty_test.empty_testB[i] for i in range(self.empty_test.n)]
             self.assertEqual(self.difference_a_minus_b, self.difference)
             # SYMMETRIC TEST
-            self.symmetric = self.empty.symmetric_difference
-            self.symmetric_difference = [self.empty.empty1[i] ^ self.empty.empty2[i] for i in range(self.empty.n)]
+            self.symmetric = self.empty_test.symmetric_differenceEmpty
+            self.symmetric_difference = [self.empty_test.empty_testA[i] ^ self.empty_test.empty_testB[i] for i in range(self.empty_test.n)]
             self.assertEqual(self.symmetric_difference, self.symmetric)
