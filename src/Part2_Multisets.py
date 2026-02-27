@@ -36,7 +36,7 @@ class Part2_Multisets:
         print(f"Total items in Bag B: {sum(self.bag_b.values())}")
 
         print("\n" + "=" * 60)
-        print("OPERATIONS")
+        print("MultiSet Operation Results")
         print("=" * 60)
         print(f"{'Max Count':<25} | {dict(Counter(multisets.bag_a | multisets.bag_b))}")
         print(f"{'Min Count':<25} | {dict(Counter(multisets.bag_a & multisets.bag_b))}")
