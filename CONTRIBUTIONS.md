@@ -1,6 +1,6 @@
 # Project 1: Set Operations
 
-This document outlines the team members, their assigned roles, responsibilities, and evidence of contributions for Project 1
+This document outlines team members, their assigned roles, responsibilities, and evidence of contributions for Project 1
 
 ---
 
