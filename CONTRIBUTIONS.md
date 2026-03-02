@@ -1,1 +1,32 @@
+Project 1: Set Operations
 
+This document outlines team members and their assigned roles. Assigned responsabilities and evidence of their contributions for Project 1.                                                          
+Name              GitHub Handle    Role                  Primary Focus
+Steven Benjamin   stevenslcc2430   Implementation Lead   Owns core implementation, integration                                                           and main branch health.
+Alex Gonzalez     Alexg11111       Verification Lead     Owns test plan, edge cases, and                                                                 verification evidence
+Carlos Recinos    dreamcarl        Communications Lead   Owns report assembly, run                                                                       instructions, and deliverable packaging
+Jackson Parr      N/A              N/A                   N/A                                              
+Responsabilities / Evidence Pointers                                                                  
+*Implementation Lead ( Steven Benjamin )*                                                          
+[x]Task 1: Repository Initialization & Instructor AccessTask
+[x]Task 3: Design Artifact
+[x]Task 5: Part 1 - Ordinary Set Operations
+[x]Task 6: Part 2 - Multiset Structure & Data
+[x]Task 17: Create Design Artifact 1
+[x]Task 22: Create Design Artifact 2
+[x]Task 23: Generate data for Set A and Set B
+[x]Task 26: Select data structure for Multisets
+[x]Task 27: Implement Bit String or Boolean Array representation
+[x]Task 30: Do away with function for each operation (use List)
+[x]Task 31: finish display_results
+[x]Task 33: GitHub Project/Discord Integration                                                                                                                                               
+*Verification Lead ( Alex Gonzalez )*                                                                                                                                                            
+[x]Task 5: Part 1 - Ordinary Set Operations
+[x]Task 9: Verification & Test Cases
+[x]Task 28: Implement ordinary set operations
+[x]Task 29: Comments verification
+[x]Task 35: 3 Non-empty set test cases
+[x]Task 36: Run at least 1 edge case                                                                                                                                                               
+*Communications Lead ( Carlos Recinos )*                                                                                                                                                            
+[x]Task 33: GitHub Project/Discord Integration                                                                                                                                                      
+<img width="756" height="721" alt="Screenshot 2026-03-01 at 5 25 33 PM" src="https://github.com/user-attachments/assets/9cd18e15-dfd6-4bac-b6a3-85b6ab6cc687" />
