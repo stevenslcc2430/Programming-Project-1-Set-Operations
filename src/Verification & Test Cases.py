@@ -37,7 +37,8 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.union1, self.union1_results)
             self.assertEqual(self.union2, self.union2_results)
             self.assertEqual(self.union3, self.union3_results)
-        #INTERSECTION TEST
+    
+    #INTERSECTION TEST
     def test_intersection(self):
             #expected results
             self.results1 = self.test1.intersection
@@ -51,7 +52,8 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.intersection1, self.results1)
             self.assertEqual(self.intersection2, self.results2)
             self.assertEqual(self.intersection3, self.results3)
-        #DIFFERENCE TEST
+    
+    #DIFFERENCE TEST
     def test_difference(self):
             #expected results
             self.difference1 = self.test1.difference_a_minus_b
@@ -79,25 +81,32 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.symmetric_difference1, self.symmetric1)
             self.assertEqual(self.symmetric_difference2, self.symmetric2)
             self.assertEqual(self.symmetric_difference3, self.symmetric3)
+    
     def test_edge_cases(self):
-            #self.empty_test = Part1_OrdinarySets()
-            #complement
-            self.complement = self.empty_test.complement_aEmpty
-            self.complement_empty = [not value for value in self.empty_test.empty_testA]
-            self.assertEqual(self.complement, self.complement_empty)
-            # union test
-            self.union_results = self.empty_test.unionEmpty
-            self.union = [self.empty_test.empty_testB[i] or self.empty_test.empty_testA[i] for i in range(self.empty_test.n)]
-            self.assertEqual(self.union, self.union_results)
-            # intersection
-            self.results = self.empty_test.intersectionEmpty
-            self.intersection = [self.empty_test.empty_testA[i] and self.empty_test.empty_testB[i] for i in range(self.empty_test.n)]
-            self.assertEqual(self.intersection, self.results)
-            # difference
-            self.difference = self.empty_test.difference_a_minus_bEmpty
-            self.difference_a_minus_b = [self.empty_test.empty_testA[i] and not self.empty_test.empty_testB[i] for i in range(self.empty_test.n)]
-            self.assertEqual(self.difference_a_minus_b, self.difference)
-            # SYMMETRIC TEST
-            self.symmetric = self.empty_test.symmetric_differenceEmpty
-            self.symmetric_difference = [self.empty_test.empty_testA[i] ^ self.empty_test.empty_testB[i] for i in range(self.empty_test.n)]
-            self.assertEqual(self.symmetric_difference, self.symmetric)
+            # Set both lists empty
+            self.empty_test.bool_a = [False] * empty_test.n
+            self.empty_test.bool_b = [False] * empty_test.n
+            # Run the operations again after setting things empty
+            A = empty_test.bool_a
+            B = empty_test.bool_b
+            self.empty_test.complement_a = [not value for value in A]
+            self.empty_test.union = [A[i] or B[i] for i in range(self.empty_test.n)]
+            self.empty_test.intersection = [A[i] and B[i] for i in range(self.empty_test.n)]
+            self.empty_test.difference_a_minus_b = [A[i] and not B[i] for i in range(self.empty_test.n)]
+            self.empty_test.symmetric_difference = [A[i] ^ B[i] for i in range(self.empty_test.n)]           
+            
+            # Test for emptiness
+            # Label operations for test
+            empty_sets = {
+                "complement_a": self.empty_test.complement_a,
+                "union": self.empty_test.union,
+                "intersection": self.empty_test.intersection,
+                "difference": self.empty_test.difference_a_minus_b,
+                "symmetric_difference": self.empty_test.symmetric_difference
+            }
+
+            for name, empty_list in empty_sets.items():
+                with self.subTest(operation=name):
+                    # Comparing to [] to see that all lists are empty
+                    self.assertEqual(empty_list, [])
+
