@@ -7,7 +7,7 @@ parser.add_argument("--select", choices=["set", "bag"], required=True, help="Cho
 
 args = parser.parse_args()
 
-# 2. Routing Logic
+# Select Logic
 if args.mode == "set":
     print("Running Part 1: Ordinary Sets - Bit strings")
     sets = Part1_OrdinarySets()
