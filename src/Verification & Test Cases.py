@@ -105,8 +105,9 @@ class MyTestCase(unittest.TestCase):
                 "symmetric_difference": self.empty_test.symmetric_difference
             }
 
-            for name, empty_list in empty_sets.items():
-                with self.subTest(operation=name):
+            for label, empty_list in empty_sets.items():
+                with self.subTest(operation=label):
                     # Comparing to [] to see that all lists are empty
                     self.assertEqual(empty_list, [])
+
 
