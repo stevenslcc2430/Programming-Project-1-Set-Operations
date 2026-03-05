@@ -1,3 +1,15 @@
+"""
+Team #5
+
+Team Members
+- Steven Benjamin
+- Alex Gonzalez
+- Carlos Recinos
+
+CS-2430-502
+Project 1: Set Operations
+"""
+
 import unittest
 
 from Part1_Set_Operations import Part1_OrdinarySets
@@ -109,5 +121,6 @@ class MyTestCase(unittest.TestCase):
                 with self.subTest(operation=label):
                     # Comparing to [] to see that all lists are empty
                     self.assertEqual(empty_list, [])
+
 
 
