@@ -1,3 +1,14 @@
+"""
+Team #5
+
+Team Members
+- Steven Benjamin
+- Alex Gonzalez
+- Carlos Recinos
+
+CS-2430-502
+Project 1: Set Operations
+"""
 import random
 
 class Part1_OrdinarySets:
