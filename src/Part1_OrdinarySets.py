@@ -58,11 +58,14 @@ class Part1_OrdinarySets:
 
     def get_set_from_boolean(self, bool_list):
         # Convert boolean values to actual set of items by returning any true value from the random boolean list using a for loop
-        return [self.universal[i] for i in range(self.n) if bool_list[i]]
+        return [self.universal[i] if bool_list[i] else "______" for i in range(self.n)]
 
     # Display method
     def display_sets(self):
         #
+        print("-" * 100)
+        print("Universal Set: ", self.get_set_from_boolean(self.universal))
+        print("-" * 100)
         print(f"{'Operation':<25} | {'Bit Representation':<25} | {'Actual Items'}")
         print("-" * 100)
         print(f"{'Subset A':<25} | {list(map(int, self.bool_a))} | {self.get_set_from_boolean(self.bool_a)}")

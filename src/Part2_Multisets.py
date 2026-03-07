@@ -22,19 +22,19 @@ class Part2_Multisets:
         
         # Multiset Union (A ∪ B)
         # Takes the max count for each element
-        self.union_ab = bag_a | bag_b
+        self.union_ab = self.bag_a | self.bag_b
 
         # Intersection (A ∩ B)
         # Takes the minimum count for each element
-        self.intersection_ab = bag_a & bag_b
+        self.intersection_ab = self.bag_a & self.bag_b
 
         # Difference (A - B)
         # Subtracts counts of B from A without becoming negative
-        self.difference_ab = bag_a - bag_b
+        self.difference_ab = self.bag_a - self.bag_b
 
         # Multiset Sum
         # Adds the counts together; combines the bags
-        self.sum_ab = bag_a + bag_b
+        self.sum_ab = self.bag_a + self.bag_b
 
     def generate_random_bag(self):
         force_items = random.sample(self.items, 2)
@@ -54,7 +54,7 @@ class Part2_Multisets:
         print("=" * 60)
         for item, count in sorted(self.bag_a.items()):
             print(f"  {item}: {count}")
-        print(f"Total items in Bag A: {bag_a.total()}")
+        print(f"Total items in Bag A: {self.bag_a.total()}")
         
         #same as set A
         print("\n" + "=" * 60)
@@ -62,12 +62,12 @@ class Part2_Multisets:
         print("=" * 60)
         for item, count in sorted(self.bag_b.items()):
             print(f"  {item}: {count}")
-        print(f"Total items in Bag B: {bag_b.total()}")
+        print(f"Total items in Bag B: {self.bag_b.total()}")
 
         print("=" * 100)
         print(f"{'Operation':<25} | {'Multiset Representation (Item: Count)'}")
         print(f"{'A ∪ B -  Multiset Union':<25} | {dict(self.union_ab)}")
-        print(f"{'A ∩ B -  Intersection':<25} | {dict(self.intersection)}")
+        print(f"{'A ∩ B -  Intersection':<25} | {dict(self.intersection_ab)}")
         print(f"{'A - B -  Difference':<25} | {dict(self.difference_ab)}")
         print(f"{'A + B -  Sum':<25} | {dict(self.sum_ab)}")
 # Create and use the multiset class
