@@ -1,8 +1,8 @@
 ```mermaid
 
 classDiagram
-    class CLI_EntryPoint {
-        <<Main Script>>
+    class Main {
+        <<Main CLI Entry Script>>
         string mode --part1|--part2
         main()
     }
