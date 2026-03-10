@@ -2,7 +2,7 @@
 
 classDiagram
     class Main {
-        <<Main CLI Entry Script>>
+        <<Main CLI Entry>>
         string mode --part1|--part2
         main()
     }
