@@ -33,5 +33,5 @@ classDiagram
         display_results(label, counter_obj)
     }
 
-    CLI_EntryPoint --> Part1_OrdinarySets : if args.part1
-    CLI_EntryPoint --> Part2_Multisets : if args.part2
+    Main --> Part1_OrdinarySets : if args.part1
+    Main --> Part2_Multisets : if args.part2
