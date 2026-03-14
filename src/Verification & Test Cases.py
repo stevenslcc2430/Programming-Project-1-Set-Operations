@@ -12,7 +12,7 @@ Project 1: Set Operations
 
 import unittest
 
-from Part1_Set_Operations import Part1_OrdinarySets
+from Part1_OrdinarySets import Part1_OrdinarySets
 
 class MyTestCase(unittest.TestCase):
     def setUp(self):
