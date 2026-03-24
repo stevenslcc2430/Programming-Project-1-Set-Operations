@@ -46,6 +46,11 @@ This document outlines team members, their assigned roles, responsibilities, and
 *Communications Lead ( Carlos Recinos )*
 
 * [x] Task 33: GitHub Project / Discord Integration
+* [x] Task 11: Report Discussion
+* [x] Task 14: Final Packaginig
+* [x] Task 13: Team Screencast
+* [x] Task 12: Compile results & final Polish
+* [x] Task 10: Report Section
 
 ---
 
